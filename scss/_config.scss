@@ -1,0 +1,22 @@
+/* 
+#FAFAFA white
+#442B1C brown
+*/
+
+$primary-color: #f47b0a;
+$secondary-color: #442b1c;
+$white: #fafafa;
+
+
+body,
+a {
+  color: $secondary-color;
+}
+
+.white {
+  color: $white;
+}
+
+.orange {
+  color: $primary-color;
+}
