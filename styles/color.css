@@ -1,0 +1,23 @@
+/* 
+#FAFAFA white
+#442B1C brown
+*/
+
+:root {
+  --brown: #442b1c;
+  --white: #fafafa;
+  --orange: #f47b0a;
+}
+
+body,
+a {
+  color: var(--brown);
+}
+
+.white {
+  color: var(--white);
+}
+
+.orange {
+  color: var(--orange);
+}

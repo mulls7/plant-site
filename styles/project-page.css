@@ -1,0 +1,75 @@
+.contact-block {
+  width: 318px;
+  height: 318px;
+  box-sizing: border-box;
+  margin: 5em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.block-content p {
+  font-size: 2.2rem;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+
+.block-content span {
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+
+.block-content div {
+  margin-bottom: 80px;
+}
+
+.block-content .button {
+  font-size: var(--size-button);
+  line-height: 0;
+}
+
+ul {
+  list-style: square;
+}
+
+.projects img {
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project-img-1 {
+    width: 57%;
+  }
+  .project-aside {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .chesney-project-img-1 {
+    width: 48%;
+  }
+  .chesney-project-img-2 {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .bottom-description {
+    width: 48%;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "web-2-project-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CU-IXD/cuixd-project-minimal-starter.git"
+  },
+  "author": "Phil Schanely <philschanely@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CU-IXD/cuixd-project-minimal-starter/issues"
+  },
+  "homepage": "https://github.com/CU-IXD/cuixd-project-minimal-starter#readme",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  },
+  "keywords": []
+}

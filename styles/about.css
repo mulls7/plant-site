@@ -1,0 +1,24 @@
+.about img {
+  margin-bottom: 2rem;
+}
+
+.connect-block {
+  padding: 10%;
+  margin-top: 6em;
+}
+
+.connect-block button {
+  border: none;
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about img {
+    max-width: 90%;
+  }
+  .about-col {
+    display: flex;
+    align-items: center;
+  }
+}
