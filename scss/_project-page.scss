@@ -11,26 +11,26 @@
 .block-content {
   text-align: center;
   margin: 0 auto;
-}
 
-.block-content p {
-  font-size: 2.2rem;
-  margin-bottom: 2em;
-  line-height: 1.5;
-}
+  p {
+    font-size: 2.2rem;
+    margin-bottom: 2em;
+    line-height: 1.5;
+  }
 
-.block-content span {
-  text-transform: uppercase;
-  font-weight: var(--weight-bold);
-}
+  span {
+    text-transform: uppercase;
+    font-weight: var(--weight-bold);
+  }
 
-.block-content div {
-  margin-bottom: 80px;
-}
+  div {
+    margin-bottom: 80px;
+  }
 
-.block-content .button {
-  font-size: var(--size-button);
-  line-height: 0;
+  .button {
+    font-size: var(--size-button);
+    line-height: 0;
+  }
 }
 
 ul {

@@ -3,7 +3,7 @@
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
-    <link href="main.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   </head>
   <body>
@@ -18,14 +18,14 @@
             <li><a href="about.html" class="white">About</a></li>
           </ul>
         </div>
-        <div class="icons">
-        <ul class="icons-list">
-          <li><a href=""><img src="images/linked-in.png" alt="Linked-in Logo"></a></li>
-          <li><a href=""><img src="images/instagram.png" alt="Instagram Logo"></a></li>
-          <li><a href=""><img src="images/behance.png" alt="Behance Logo"></a></li>
-          <li><a href=""><img src="images/dribbble.png" alt="Dribble Logo"></a></li>
-        </ul>
-        </div>
+        <!--<div class="icons"> 
+          <ul class="icons-list">
+            <li><a href=""><img src="images/linked-in.png" alt="Linked-in Logo"></a></li>
+            <li><a href=""><img src="images/instagram.png" alt="Instagram Logo"></a></li>
+            <li><a href=""><img src="images/behance.png" alt="Behance Logo"></a></li>
+            <li><a href=""><img src="images/dribbble.png" alt="Dribble Logo"></a></li>
+          </ul>
+        </div>-->
       </nav>
     </header>
     <div class="hero">
@@ -34,7 +34,7 @@
         <p class="button">See Work</p>
         <img src="images/circle.png">
       </div>
-      <img src="../images/hero.png" alt="Portrait of Luke Moffitt" class="hero-image">
+      <img src="images/hero.png" alt="Portrait of Luke Moffitt" class="hero-image">
     </div>
     <main class="page-home">
       <h2>Latest Projects</h2>
@@ -49,15 +49,19 @@
       </div>
       <div class="project-list-project">
         <a href="projects/dorm-branding.html"><img class="project-list-project-img" src="images/dorm-img.png" alt="Don't sleep on St. Chesney design on back of t-shirt"/></a>
-        <h3><a href="projects/dorm-branding.html">Dorm Branding</a></h3>
-        <p>At Cedarville University, the dorms “St. Clair” and “McChesney” are combined under one Resident Director who...</p>
-        <p class="button"><a href="projects/dorm-branding.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
+        <div class="project-list-project__text">
+          <h3><a href="projects/dorm-branding.html">Dorm Branding</a></h3>
+          <p>At Cedarville University, the dorms “St. Clair” and “McChesney” are combined under one Resident Director who...</p>
+          <p class="button"><a href="projects/dorm-branding.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
+        </div>  
       </div>
       <div class="project-list-project">
         <a href="projects/stomp-web-design.html"><img class="project-list-project-img" src="images/web-img.png" alt="laptop with stomp box stop website on screen"/></a>
-        <h3><a href="projects/stomp-web-design.html">Web Design</a></h3>
-        <p>The final project of Web Design 1 class. I used existing articles and imagery to create a small site about...</p>
-        <p class="button"><a href="projects/stomp-web-design.html" class="orange"> My Project<img src="images/arrowo.png"></p></a>
+        <div class="project-list-project__text">
+          <h3><a href="projects/stomp-web-design.html">Web Design</a></h3>
+          <p>The final project of Web Design 1 class. I used existing articles and imagery to create a small site about...</p>
+          <p class="button"><a href="projects/stomp-web-design.html" class="orange"> My Project<img src="images/arrowo.png"></p></a>
+        </div>  
       </div>
       </div>
       <div class="about-block">
@@ -77,7 +81,7 @@
       </div>
     </main>
     <footer>
-      <div class="logob"><a href="index.html"/><img class="logo-brown" src="images/luke-logo-brown.png" alt="A logo with an Eagle and the name Luke Moffitt" /></a></div>
+      <div class="logob"><a href="index.html"><img class="logo-brown" src="images/luke-logo-brown.png" alt="A logo with an Eagle and the name Luke Moffitt"/></a></div>
       <div class="icons">
         <ul class="icons-list">
           <li><a href=""><img src="images/linked-inb.png" alt="Linked-in Logo"></a></li>

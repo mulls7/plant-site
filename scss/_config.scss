@@ -20,3 +20,10 @@ a {
 .orange {
   color: $primary-color;
 }
+
+header,
+  .connect-block,
+  .contact-block {
+    background-color: $primary-color;
+    /*opacity: .95;*/
+  }
