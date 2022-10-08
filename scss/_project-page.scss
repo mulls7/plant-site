@@ -20,7 +20,7 @@
 
   span {
     text-transform: uppercase;
-    font-weight: var(--weight-bold);
+    font-weight: $weight-bold;
   }
 
   div {
@@ -28,7 +28,7 @@
   }
 
   .button {
-    font-size: var(--size-button);
+    font-size: $size-button;
     line-height: 0;
   }
 }
