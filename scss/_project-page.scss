@@ -11,26 +11,26 @@
 .block-content {
   text-align: center;
   margin: 0 auto;
-}
 
-.block-content p {
-  font-size: 2.2rem;
-  margin-bottom: 2em;
-  line-height: 1.5;
-}
+  p {
+    font-size: 2.2rem;
+    margin-bottom: 2em;
+    line-height: 1.5;
+  }
 
-.block-content span {
-  text-transform: uppercase;
-  font-weight: var(--weight-bold);
-}
+  span {
+    text-transform: uppercase;
+    font-weight: $weight-bold;
+  }
 
-.block-content div {
-  margin-bottom: 80px;
-}
+  div {
+    margin-bottom: 80px;
+  }
 
-.block-content .button {
-  font-size: var(--size-button);
-  line-height: 0;
+  .button {
+    font-size: $size-button;
+    line-height: 0;
+  }
 }
 
 ul {
@@ -46,7 +46,7 @@ ul {
     display: flex;
     justify-content: space-between;
   }
-  .project-img-1 {
+  .project-img--1 {
     width: 57%;
   }
   .project-aside {
@@ -56,20 +56,20 @@ ul {
     justify-content: space-between;
   }
 
-  .chesney-project-img-1 {
+  .chesney-project-img--1 {
     width: 48%;
   }
-  .chesney-project-img-2 {
+  .chesney-project-img--2 {
     width: 48%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .bottom {
+  .project-description {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .bottom-description {
+  .project-description__text {
     width: 48%;
   }
 }
