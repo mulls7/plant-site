@@ -20,7 +20,7 @@
 
   span {
     text-transform: uppercase;
-    font-weight: var(--weight-bold);
+    font-weight: $weight-bold;
   }
 
   div {
@@ -28,7 +28,7 @@
   }
 
   .button {
-    font-size: var(--size-button);
+    font-size: $size-button;
     line-height: 0;
   }
 }
@@ -46,7 +46,7 @@ ul {
     display: flex;
     justify-content: space-between;
   }
-  .project-img-1 {
+  .project-img--1 {
     width: 57%;
   }
   .project-aside {
@@ -56,20 +56,20 @@ ul {
     justify-content: space-between;
   }
 
-  .chesney-project-img-1 {
+  .chesney-project-img--1 {
     width: 48%;
   }
-  .chesney-project-img-2 {
+  .chesney-project-img--2 {
     width: 48%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .bottom {
+  .project-description {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .bottom-description {
+  .project-description__text {
     width: 48%;
   }
 }
