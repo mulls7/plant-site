@@ -3,7 +3,7 @@
   $font-body: "Poppins", sans-serif;
 
   $size-body: 1.3rem;
-  $size-h2: 2.8rem;
+  $size-h2: 3.5rem;
   $size-h3: 2.2rem;
   $size-button: 1.4rem;
 
@@ -52,6 +52,7 @@ h3 {
 
 nav a {
   font-weight: $weight-reg;
+  text-transform: uppercase;
 }
 
 p {

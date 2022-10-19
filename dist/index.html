@@ -6,17 +6,49 @@
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: .5;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slideInRight {
+      0% {
+        transform: translateX(100%);
+        opacity: .5;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .hero {
+      animation: slideInLeft .75s ease;
+    }
+
+    main {
+      animation: slideInRight .75s ease;
+    }
+    </style>
   </head>
   <body>
     <header class="header-home">
       <h1>
-        <a href="index.html"><img src="images/luke-logo-white.png" alt="A logo with an eagle and the name Luke Moffitt"/>
+        <a href="index.html">
+          <img src="images/luke-logo-white.png" alt="A logo with an eagle and the name Luke Moffitt"/>
+        </a>
       </h1>
       <nav>
         <div class="pages">
           <ul class="pages__list">
-            <li><a href="index.html" class="white active">Work</a></li>
-            <li><a href="about.html" class="white">About</a></li>
+            <li><a href="index.html" class="page-link white active">Work</a></li>
+            <li><a href="about.html" class="page-link white">About</a></li>
           </ul>
         </div>
 
@@ -46,7 +78,7 @@
           <a href="projects/penguin-book-design.html"><img class="project-list__project__img" src="images/book-img.png" alt="Murder Most Unladylike book cover mockup"/></a>
           <div class="project-list__project__text">
             <h3><a href="projects/penguin-book-design.html">Penguin Book Design</a></h3>
-            <p>A project for the class Graphic Design 1. The main goal of the proejct was to redesign the book cover for Murder Most Unladylike...</p>
+            <p>A project for the class Graphic Design 1. The main goal of the project was to redesign the book cover for Murder Most Unladylike...</p>
             <p class="button"><a href="projects/penguin-book-design.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
           </div>
         </div>
