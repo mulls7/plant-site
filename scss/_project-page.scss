@@ -41,6 +41,40 @@ ul {
   margin-bottom: 2em;
 }
 
+.slide-viewer {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.slide-group {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+
+  &:first-child {
+    display: block;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
 @media screen and (min-width: 768px) {
   .projects {
     display: flex;
