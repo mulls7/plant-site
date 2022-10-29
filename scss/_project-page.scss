@@ -68,9 +68,38 @@ ul {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: 1s ease;
+  }
+
+  img:hover {
+    transform: scale(1.1);
   }
 }
 
+.slide-buttons {
+  width: 100%;
+  margin: 0 auto;
+
+  .slide-btn {
+    background-color: lightgrey;
+    margin: 1rem .2rem 2rem;
+    border-radius: 50%;
+    border: none;
+    color: lightgrey;
+    transition: 1s ease;
+   }
+   .active {
+    background-color: grey;
+    color: grey;
+    
+  }
+
+  .slide-btn:hover {
+    color: darkgrey;
+    background-color: darkgrey;
+  }
+   
+}
 
 
 
@@ -96,6 +125,10 @@ ul {
   .chesney-project-img--2 {
     width: 48%;
   }
+
+  .slide-viewer {
+    height: 400px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .project-description {
@@ -105,5 +138,14 @@ ul {
   }
   .project-description__text {
     width: 48%;
+  }
+
+  .slide-viewer {
+    height: 550px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .slide-viewer {
+    height: 800px;
   }
 }
