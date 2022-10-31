@@ -86,17 +86,19 @@ ul {
     border-radius: 50%;
     border: none;
     color: lightgrey;
-    transition: 1s ease;
+    transition: all .5s ease;
+
    }
    .active {
     background-color: grey;
     color: grey;
-    
+    transform: scale(1.1);
   }
 
   .slide-btn:hover {
     color: darkgrey;
     background-color: darkgrey;
+    transform: scale(1.1);
   }
    
 }
