@@ -5,7 +5,6 @@ main {
   padding-left: 5rem;
   padding-right: 5rem;
   margin-left: auto;
-  margin-right: auto;
 }
 
 /* Ensures base font size is a factor of 10 for using rems for font sizes */
@@ -95,7 +94,8 @@ img {
 
 .hero__overlay  p {
   font-size: 10vw;
-  margin-bottom: 4vw;
+  margin-bottom: 0vw;
+  opacity: .85;
 }
 
 .hero__overlay span {
@@ -108,8 +108,13 @@ img {
 }
 
 .hero__overlay .button {
-  margin-top: 1vw;
-  font-size: 3vw;
+  margin-top: 6vw;
+  margin-bottom: 1vw;
+  font-size: 4vw;
+}
+
+.hero__overlay .button:hover {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {
@@ -185,7 +190,7 @@ img {
 
 
   .hero__overlay  p {
-    font-size: 5vw;
+    font-size: 10vw;
     margin-bottom: 4vw;
   }
   
