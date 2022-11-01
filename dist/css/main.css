@@ -147,6 +147,10 @@ button,
   font-size: 1.4rem;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
 .button img {
   width: 0.48em;
   margin-left: 1.5em;
@@ -201,11 +205,14 @@ a {
   color: #f47b0a;
 }
 
-header,
-.connect-block,
-.contact-block {
+header {
   background-color: #f47b0a;
   /*opacity: .95;*/
+}
+
+.connect-block, .contact-block {
+  background-color: #442b1c;
+  opacity: 0.9;
 }
 
 header {
@@ -331,6 +338,7 @@ nav .active {
 footer {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -345,6 +353,9 @@ footer ul {
 footer .icons {
   width: 281px;
   margin: 0 auto;
+  padding-top: 0.5rem;
+  margin-right: 5rem;
+  border: 2px red solid;
 }
 footer .icons li {
   width: 18px;
@@ -353,9 +364,12 @@ footer .icons li {
   margin: 0 auto;
 }
 footer .logob {
-  width: 128px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  width: 100%;
+  border: 2px red solid;
+}
+footer .logob img {
+  width: 128px;
 }
 
 @media screen and (min-width: 950px) {
@@ -363,9 +377,6 @@ footer .logob {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  footer .logob {
-    padding-bottom: 0px;
   }
 }
 /* Center body and fix to minimum width */
@@ -390,7 +401,8 @@ img {
 
 /* Other mobile (default) styles go here */
 .about-block {
-  background-color: #f47b0a;
+  background-color: #442b1c;
+  opacity: 0.9;
   padding: 8%;
   margin-left: auto;
   margin-right: auto;
@@ -463,8 +475,8 @@ img {
 }
 
 .hero__overlay .button {
-  margin-top: 4vw;
-  font-size: 5vw;
+  margin-top: 1vw;
+  font-size: 3vw;
 }
 
 @media screen and (min-width: 600px) {
@@ -476,6 +488,10 @@ img {
   .project-list__project {
     width: 48%;
     flex-wrap: wrap;
+  }
+  .hero__overlay p {
+    font-size: 8vw;
+    margin-bottom: 4vw;
   }
 }
 @media screen and (min-width: 950px) {
@@ -521,6 +537,21 @@ img {
   }
   .about-block__content__desc {
     width: 55%;
+  }
+  .hero__overlay p {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  .hero__overlay span {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .hero__overlay img {
+    width: 2vw;
+  }
+  .hero__overlay .button {
+    margin-top: 4vw;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 1200px) {

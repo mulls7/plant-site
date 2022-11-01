@@ -31,6 +31,11 @@ button,
   font-size: $size-button;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
+
 .button img {
   width: 0.48em;
   margin-left: 1.5em;

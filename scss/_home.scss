@@ -21,7 +21,8 @@ img {
 /* Other mobile (default) styles go here */
 
 .about-block {
-  background-color: $primary-color;
+  background-color: $secondary-color;
+  opacity: .9;
   padding: 8%;
   margin-left: auto;
   margin-right: auto;
@@ -104,12 +105,11 @@ img {
 
 .hero__overlay img {
   width: 3vw;
- 
 }
 
 .hero__overlay .button {
-  margin-top: 4vw;
-  font-size: 5vw;
+  margin-top: 1vw;
+  font-size: 3vw;
 }
 
 @media screen and (min-width: 600px) {
@@ -122,6 +122,10 @@ img {
   .project-list__project {
     width: 48%;
     flex-wrap: wrap;
+  }
+  .hero__overlay  p {
+    font-size: 8vw;
+    margin-bottom: 4vw;
   }
   
 }
@@ -178,6 +182,27 @@ img {
       width: 55%;
     }
   }
+
+
+  .hero__overlay  p {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  
+  .hero__overlay span {
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+  }
+  
+  .hero__overlay img {
+    width: 2vw;
+   
+  }
+
+  .hero__overlay .button {
+    margin-top: 4vw;
+    font-size: 2vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -206,6 +231,7 @@ img {
   .project-list__project {
     width: 40%;
   }
+
 
   /* Other desktop styles */
 }
