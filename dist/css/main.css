@@ -336,7 +336,7 @@ nav .active {
   }
 }
 footer {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
   margin-left: 5rem;
   display: flex;
@@ -355,7 +355,6 @@ footer .icons {
   margin: 0 auto;
   padding-top: 0.5rem;
   margin-right: 5rem;
-  border: 2px red solid;
 }
 footer .icons li {
   width: 18px;
@@ -366,7 +365,6 @@ footer .icons li {
 footer .logob {
   margin: 0 auto;
   width: 100%;
-  border: 2px red solid;
 }
 footer .logob img {
   width: 128px;
@@ -383,8 +381,8 @@ footer .logob img {
 main {
   min-width: 318px;
   box-sizing: border-box;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -498,8 +496,8 @@ img {
   /* Scale body to new minimum width */
   main {
     min-width: 768px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
   main .project-list {
     display: flex;
