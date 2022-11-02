@@ -41,6 +41,15 @@ ul {
   margin-bottom: 2em;
 }
 
+.golf-slider {
+
+  .slide-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+}
+
 .slide-viewer {
   position: relative;
   overflow: hidden;
@@ -128,6 +137,15 @@ ul {
     width: 48%;
   }
 
+  .golf-slider {
+
+    .slide-viewer {
+      position: relative;
+      overflow: hidden;
+      height: 475px;
+    }
+  }
+
   .slide-viewer {
     height: 400px;
   }
@@ -142,11 +160,29 @@ ul {
     width: 48%;
   }
 
+  .golf-slider {
+
+    .slide-viewer {
+      position: relative;
+      overflow: hidden;
+      height: 600px;
+    }
+  }
+
   .slide-viewer {
     height: 550px;
   }
 }
 @media screen and (min-width: 1800px) {
+
+  .golf-slider {
+
+    .slide-viewer {
+      position: relative;
+      overflow: hidden;
+      height: 1000px;
+    }
+  }
   .slide-viewer {
     height: 800px;
   }

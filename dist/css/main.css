@@ -417,7 +417,7 @@ img {
 }
 
 .project-list__project {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   box-shadow: 0 1px 1px hsla(0deg, 0%, 0%, 0.075), 0 2px 2px hsla(0deg, 0%, 0%, 0.075), 0 4px 4px hsla(0deg, 0%, 0%, 0.075), 0 8px 8px hsla(0deg, 0%, 0%, 0.075), 0 16px 16px hsla(0deg, 0%, 0%, 0.075);
   transition: all 0.4s ease;
 }
@@ -497,7 +497,8 @@ img {
 @media screen and (min-width: 600px) {
   .project-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem;
     flex-wrap: wrap;
   }
   .project-list__project {
@@ -518,8 +519,9 @@ img {
   }
   main .project-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 0 2rem;
   }
   main .project-list__project {
     width: 31.5%;
@@ -593,6 +595,9 @@ img {
   .project-list__project {
     width: 40%;
   }
+  .project-list {
+    gap: 0 2.5rem;
+  }
   /* Other desktop styles */
 }
 .about img {
@@ -655,6 +660,12 @@ ul {
 
 .projects img {
   margin-bottom: 2em;
+}
+
+.golf-slider .slide-viewer {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
 }
 
 .slide-viewer {
@@ -732,6 +743,11 @@ ul {
   .chesney-project-img--2 {
     width: 48%;
   }
+  .golf-slider .slide-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 475px;
+  }
   .slide-viewer {
     height: 400px;
   }
@@ -745,11 +761,21 @@ ul {
   .project-description__text {
     width: 48%;
   }
+  .golf-slider .slide-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+  }
   .slide-viewer {
     height: 550px;
   }
 }
 @media screen and (min-width: 1800px) {
+  .golf-slider .slide-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 1000px;
+  }
   .slide-viewer {
     height: 800px;
   }
