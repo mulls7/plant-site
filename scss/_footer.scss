@@ -5,7 +5,15 @@ footer {
   margin-right: 3rem;
   display: flex;
   justify-content: space-between;
-
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  
+  .copyright {
+    text-align: left;
+    width: 100%;
+    font-size: $size-copyright;
+    opacity: .5;
+  }
 
   
   li {
@@ -20,15 +28,18 @@ footer {
   }
 
   .icons {
-    width: 281px;
+   
+
+    &__list {
+    width: 140px;
     margin: 0 auto;
-    padding-top: .5rem;
+    }
 
     li {
       width: 18px;
       min-width: 18px;
       height: 18px;
-      margin: 0 auto;
+      margin: 0 2rem 0 0;
       transition: all .25s ease
     }
   }
@@ -38,8 +49,7 @@ footer {
   }
 
   .logob {
-    margin: 0 auto;
-    width: 100%;
+    width: 50%;
 
     img {
       width: 128px;
