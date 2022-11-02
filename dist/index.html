@@ -10,30 +10,47 @@
     @keyframes slideInLeft {
       0% {
         transform: translateX(-100%);
-        opacity: .5;
       }
       100% {
         transform: translateX(0);
-        opacity: 1;
       }
     }
     @keyframes slideInRight {
       0% {
         transform: translateX(100%);
-        opacity: .5;
+
       }
       100% {
         transform: translateX(0);
-        opacity: 1;
       }
     }
 
-    .hero {
-      animation: slideInLeft .75s ease;
-    }
-
+    @keyframes grow {
+        0% {
+          transform: scale(.95);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+  
     main {
-      animation: slideInRight .75s ease;
+      animation: grow .9s ease;
+    }
+    .hero {
+      animation: grow .9s ease;
+    }
+    .hero {
+      animation: slideInLeft .85s ease;
+    }
+    .project-list__project:nth-child(1) {
+      animation: slideInRight .8s ease; 
+    }
+    .project-list__project:nth-child(2) {
+      animation: slideInRight .9s ease;
+    }
+    .project-list__project:nth-child(3) {
+      animation: slideInRight 1s ease;
     }
     </style>
   </head>

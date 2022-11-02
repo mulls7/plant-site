@@ -6,6 +6,20 @@
     <link href="../css/main.css" type="text/css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+      @keyframes grow {
+        0% {
+          transform: scale(.95);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+  
+      main {
+        animation: grow .9s ease;
+      }
+      </style>
   </head>
   <body>
     <header class="header-home">

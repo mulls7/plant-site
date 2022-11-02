@@ -7,7 +7,58 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <style>
-    </style>
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        0% {
+          transform: translateX(100%);
+
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes grow {
+        0% {
+          transform: scale(.95);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+  
+      main {
+        animation: grow .9s ease;
+      }
+
+      .project-list__project:nth-child(1) {
+          animation: slideInRight .8s ease; 
+        }
+      .project-list__project:nth-child(2) {
+          animation: slideInRight .9s ease;
+        }
+      .project-list__project:nth-child(3) {
+          animation: slideInRight 1s ease;
+        }
+      .project-list__project:nth-child(4) {
+        animation: slideInRight .8s ease; 
+        }
+      .project-list__project:nth-child(5) {
+          animation: slideInRight .9s ease;
+        }
+      .project-list__project:nth-child(6) {
+        animation: slideInRight 1s ease;
+      }
+      
+    
+      </style>
   </head>
   <body>
     <header class="header-home">
