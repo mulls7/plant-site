@@ -1,9 +1,12 @@
 footer {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
+  margin-left: 5rem;
+  
   display: flex;
-  justify-content: space-between
-  ;
+  justify-content: space-between;
+
+
   
   li {
     list-style: none;
@@ -13,24 +16,39 @@ footer {
     display: flex;
     margin: 0;
     padding: 0;
+    
   }
 
   .icons {
     width: 281px;
     margin: 0 auto;
+    padding-top: .5rem;
+    margin-right: 5rem;
+
     li {
       width: 18px;
       min-width: 18px;
       height: 18px;
       margin: 0 auto;
+      transition: all .25s ease
     }
   }
 
-  .logob {
-    width: 128px;
-    margin: 0 auto;
-    padding-bottom: 30px;
+  .icons li:hover {
+    transform: scale(1.2);
   }
+
+  .logob {
+    margin: 0 auto;
+    width: 100%;
+
+    img {
+      width: 128px;
+    }
+    
+  }
+
+
 }
 
 @media screen and (min-width: 950px) {
@@ -38,9 +56,5 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .logob {
-      padding-bottom: 0px;
-    }
   }
 }

@@ -2,10 +2,9 @@
 main {
   min-width: 318px;
   box-sizing: border-box;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin-left: auto;
-  margin-right: auto;
 }
 
 /* Ensures base font size is a factor of 10 for using rems for font sizes */
@@ -21,7 +20,8 @@ img {
 /* Other mobile (default) styles go here */
 
 .about-block {
-  background-color: $primary-color;
+  background-color: $secondary-color;
+  opacity: .9;
   padding: 8%;
   margin-left: auto;
   margin-right: auto;
@@ -42,20 +42,24 @@ img {
 
 
 .project-list__project {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
-  transition: box-shadow 0.25s ease-in-out;
+  transition: all 0.4s ease;
 
   &:hover {
   box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075),
     0 4px 4px hsl(0deg 0% 0% / 0.075), 0 8px 8px hsl(0deg 0% 0% / 0.075),
     0 16px 16px hsl(0deg 0% 0% / 0.075), 0 32px 32px hsl(0deg 0% 0% / 0.075);
+
+    transform: scale(1.02);
   }
 
   &__img {
     margin-bottom: 2rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 
   &__text {
@@ -73,14 +77,15 @@ img {
     height: 0px;
     z-index: 0;
     width: 100%;
+    transform: translateY(20rem);
   }
 
-  &-image {
+  &__image {
     display: block;
     margin-top: -40px;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
+    height: 35rem;
     width: 100%;
     object-fit: cover;
     z-index: -1;
@@ -88,39 +93,82 @@ img {
 }
 
 .hero__overlay  p {
-  font-size: 4vw;
-  transform: translateY(40vw);
+  font-size: 10vw;
+  margin-bottom: 0vw;
+  opacity: .85;
 }
+
 .hero__overlay span {
   font-weight: $weight-bold;
   text-transform: uppercase;
 }
 
 .hero__overlay img {
-  width: 1.8vw;
-  transform: translateY(40.5vw);
+  width: 3vw;
 }
 
 .hero__overlay .button {
-  margin-top: 4vw;
-  font-size: 2vw;
+  margin-top: 6vw;
+  margin-bottom: 1vw;
+  font-size: 4vw;
+}
+
+.hero__overlay .button:hover {
+  text-decoration: none;
+}
+
+.latest-projects {
+  display: flex;
+  align-items: baseline;
+}
+
+.see-all-btn{
+  display: inline;
+  margin-left: 2.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  
+  .home-project-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 2.5rem;
+  }
+  .project-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .project-list__project {
+    width: 48%;
+    flex-wrap: wrap;
+  }
+  .hero__overlay  p {
+    font-size: 8vw;
+    margin-bottom: 4vw;
+  }
+  
 }
 
 @media screen and (min-width: 950px) {
   /* Scale body to new minimum width */
   main {
     min-width: 768px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 13rem;
+    padding-right: 13rem;
 
     .project-list {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 0 2rem;
       
     }
 
     .project-list__project {
       width: 31.5%;
+      flex-wrap: wrap;
     }
   }
   
@@ -136,6 +184,9 @@ img {
     z-index: -1;
   }
   
+  .hero__overlay {
+    transform: translateY(40rem);
+  }
   
 
   .about-block__content {
@@ -153,6 +204,27 @@ img {
       width: 55%;
     }
   }
+
+
+  .hero__overlay  p {
+    font-size: 6vw;
+    margin-bottom: 4vw;
+  }
+  
+  .hero__overlay span {
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+  }
+  
+  .hero__overlay img {
+    width: 2vw;
+   
+  }
+
+  .hero__overlay .button {
+    margin-top: 4vw;
+    font-size: 2vw;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -162,7 +234,7 @@ img {
   }
 
   .hero__overlay {
-    top: -15vw;
+    transform: translateY(40rem);
   }
   
   .hero__image {
@@ -181,6 +253,12 @@ img {
   .project-list__project {
     width: 40%;
   }
+
+  .project-list {
+    gap: 0 2.5rem;
+    
+  }
+
 
   /* Other desktop styles */
 }

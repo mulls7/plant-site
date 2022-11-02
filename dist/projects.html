@@ -7,34 +7,6 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <style>
-    @keyframes slideInLeft {
-      0% {
-        transform: translateX(-100%);
-        opacity: .5;
-      }
-      100% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    @keyframes slideInRight {
-      0% {
-        transform: translateX(100%);
-        opacity: .5;
-      }
-      100% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-
-    .hero {
-      animation: slideInLeft .75s ease;
-    }
-
-    main {
-      animation: slideInRight .75s ease;
-    }
     </style>
   </head>
   <body>
@@ -47,8 +19,8 @@
       <nav>
         <div class="pages">
           <ul class="pages__list">
-            <li><a href="index.html" class="page-link white active">Home</a></li>
-            <li><a href="projects.html" class="page-link white">Projects</a></li>
+            <li><a href="index.html" class="page-link white">Home</a></li>
+            <li><a href="projects.html" class="page-link white active">Projects</a></li>
             <li><a href="about.html" class="page-link white">About</a></li>
           </ul>
         </div>
@@ -61,34 +33,16 @@
             <li><a href=""><img src="images/dribbble.png" alt="Dribble Logo"></a></li>
           </ul>
         </div>-->
-        
+
       </nav>
     </header>
-    <div class="hero">
-      <div class="hero__overlay">
-        <p>Hey, <span class="together">I'm Luke</span></p>
-        <!--<p class="button">See Work</p>
-        <img src="images/circle.png"/>-->
-      </div>
-      <img src="images/hero.png" alt="Portrait of Luke Moffitt" class="hero__image">
-    </div>
     <main class="page-home">
-      <div class="latest-projects"> 
-        <h2>Latest Projects</h2><a class="button orange see-all-btn" href="projects.html">see all<img src="images/arrowo.png"></a>
-      </div>
-      <div class="home-project-list">
-        <!--<div class="project-list__project">
-          <a href="projects/penguin-book-design.html"><img class="project-list__project__img" src="images/book-img.png" alt="Murder Most Unladylike book cover mockup"/></a>
-          <div class="project-list__project__text">
-            <h3><a href="projects/penguin-book-design.html">Penguin Book Design</a></h3>
-            <p>A project for the class Graphic Design 1. The main goal of the project was to redesign the book cover for Murder Most Unladylike...</p>
-            <p class="button"><a href="projects/penguin-book-design.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
-          </div>
-        </div>-->
+      <h2>Projects</h2>
+      <div class="project-list">
         <div class="project-list__project">
           <a href="projects/clarendon-book.html"><img class="project-list__project__img" src="images/clarendon-mock-cover.png" alt="a type specimen book about the typeface clarendon"/></a>
           <div class="project-list__project__text">
-            <h3><a href="projects/clarendon-book.html">Clarendon Type Booklet</a></h3>
+            <h3><a href="projects/clarendon-book.html">Clarendon Type Book</a></h3>
             <p>The main goal of this project was to create a type specimen book about the typeface Clarendon. The book is...</p>
             <p class="button"><a href="projects/clarendon-book.html" class="orange"> My Project<img src="images/arrowo.png"></p></a>
           </div>  
@@ -109,22 +63,24 @@
             <p class="button"><a href="projects/stomp-web-design.html" class="orange"> My Project<img src="images/arrowo.png"></p></a>
           </div>  
         </div>
-      </div>
-      <div class="about-block">
-        <div class="about-block__content">
-          <div class="about-block__content__img">
-            <img id="luke" src="images/about-card-img.png" alt="Portrait of Luke Moffitt"/>
+          <div class="project-list__project">
+          <a href="projects/penguin-book-design.html"><img class="project-list__project__img" src="images/book-img.png" alt="Murder Most Unladylike book cover mockup"/></a>
+          <div class="project-list__project__text">
+            <h3><a href="projects/penguin-book-design.html">Penguin Book Design</a></h3>
+            <p>A project for the class Graphic Design 1. The main goal of the project was to redesign the book cover for Murder Most Unladylike...</p>
+            <p class="button"><a href="projects/penguin-book-design.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
           </div>
-          <div class="about-block__content__desc">
-            <h3 class="white">Welcome, Let's  Collaborate.</h3>
-            <p class="white">I’m currently a Junior at Cedarville University and am studying Visual Communication Design with a concentration in Interactive Web Design. </p>
-            <p class="button" >
-              <a href="about.html" class="white">To About Page<img src="images/arroww.png">
-            </p>
-            </a>
+        </div>
+        <div class="project-list__project">
+          <a href="projects/golf-symbol-book.html"><img class="project-list__project__img" src="images/golf-mock-cover.png" alt="golf symbol book cover mockup"/></a>
+          <div class="project-list__project__text">
+            <h3><a href="projects/golf-symbol-book.html">Golf Symbol Book</a></h3>
+            <p>The golf symbol of the subject swinging a driver in the middle of the swing was chosen because the symbol system included...</p>
+            <p class="button"><a href="projects/golf-symbol-book.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
           </div>
         </div>
       </div>
+    </div>
     </main>
     <footer>
       <div class="logob">
