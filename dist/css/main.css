@@ -519,11 +519,15 @@ img {
 .latest-projects {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
+}
+.latest-projects h2 {
+  margin-right: 2.5rem;
 }
 
 .see-all-btn {
   display: inline;
-  margin-left: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 600px) {
