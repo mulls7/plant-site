@@ -147,8 +147,22 @@ button,
   font-size: 1.4rem;
 }
 
+button {
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+button:focus {
+  transform: scale(0.9);
+}
+
 .button:hover {
   text-decoration: underline;
+  font-weight: 700;
 }
 
 .button img {
@@ -495,6 +509,11 @@ img {
 }
 
 @media screen and (min-width: 600px) {
+  .home-project-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 2.5rem;
+  }
   .project-list {
     display: flex;
     justify-content: flex-start;
@@ -656,6 +675,10 @@ img {
 
 ul {
   list-style: square;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
 }
 
 .projects img {

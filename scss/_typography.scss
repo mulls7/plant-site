@@ -31,8 +31,22 @@ button,
   font-size: $size-button;
 }
 
+button {
+  transition: all .5s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+button:focus {
+  transform: scale(.9);
+}
+
 .button:hover {
   text-decoration: underline;
+  font-weight: $weight-bold;
 }
 
 
