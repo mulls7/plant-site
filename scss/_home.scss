@@ -2,10 +2,9 @@
 main {
   min-width: 318px;
   box-sizing: border-box;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-left: auto;
-  
 }
 
 /* Ensures base font size is a factor of 10 for using rems for font sizes */
@@ -130,6 +129,11 @@ img {
 
 @media screen and (min-width: 600px) {
   
+  main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .home-project-list {
     display: flex;
     justify-content: space-between;

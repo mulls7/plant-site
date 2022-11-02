@@ -233,8 +233,8 @@ header {
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-bottom: 40px;
   position: static;
   z-index: 1;
@@ -332,6 +332,12 @@ nav .active {
   font-weight: 700;
 }
 
+@media screen and (min-width: 600px) {
+  header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
 @media screen and (min-width: 768px) {
   nav {
     display: flex;
@@ -350,7 +356,8 @@ nav .active {
 footer {
   margin-top: 60px;
   margin-bottom: 30px;
-  margin-left: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -366,7 +373,6 @@ footer .icons {
   width: 281px;
   margin: 0 auto;
   padding-top: 0.5rem;
-  margin-right: 5rem;
 }
 footer .icons li {
   width: 18px;
@@ -386,6 +392,12 @@ footer .logob img {
   width: 128px;
 }
 
+@media screen and (min-width: 600px) {
+  footer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
 @media screen and (min-width: 950px) {
   footer {
     display: flex;
@@ -397,8 +409,8 @@ footer .logob img {
 main {
   min-width: 318px;
   box-sizing: border-box;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin-left: auto;
 }
 
@@ -509,6 +521,10 @@ img {
 }
 
 @media screen and (min-width: 600px) {
+  main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
   .home-project-list {
     display: flex;
     justify-content: space-between;

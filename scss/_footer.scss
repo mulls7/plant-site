@@ -1,8 +1,8 @@
 footer {
   margin-top: 60px;
   margin-bottom: 30px;
-  margin-left: 5rem;
-  
+  margin-left: 3rem;
+  margin-right: 3rem;
   display: flex;
   justify-content: space-between;
 
@@ -23,7 +23,6 @@ footer {
     width: 281px;
     margin: 0 auto;
     padding-top: .5rem;
-    margin-right: 5rem;
 
     li {
       width: 18px;
@@ -49,6 +48,14 @@ footer {
   }
 
 
+}
+
+@media screen and (min-width: 600px) {
+  
+  footer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 
 @media screen and (min-width: 950px) {
