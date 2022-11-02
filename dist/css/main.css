@@ -219,10 +219,12 @@ header {
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin-bottom: 40px;
-  padding-right: 20px;
   position: static;
   z-index: 1;
+  align-items: center;
   /*
   position: fixed; 
   top: 0;
@@ -240,8 +242,6 @@ header h1 img {
   width: 140px;
   min-width: 140px;
   display: block;
-  margin-left: 5rem;
-  margin-bottom: 0px;
   transition: all 0.5s;
 }
 header h1:hover img {
@@ -249,23 +249,22 @@ header h1:hover img {
 }
 
 nav {
-  margin-right: 5rem;
-}
-nav ul {
-  display: flex;
-  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-top: 0.5rem;
 }
-nav li {
-  list-style: none;
-}
-nav .pages {
-  width: 128px;
+nav .pages ul {
+  display: flex;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 nav .pages li {
-  padding-bottom: 10px;
   margin: 0 auto;
-  margin-right: 3rem;
+  margin-left: 3rem;
+  list-style: none;
 }
 nav .pages li .page-link {
   position: relative;
@@ -302,6 +301,9 @@ nav .pages li .page-link:hover:before, nav .pages li .page-link:hover:after {
 nav .pages li .page-link:hover {
   letter-spacing: 0.2rem;
 }
+nav .pages li:first-child {
+  margin-left: 0rem;
+}
 nav .icons {
   width: 128px;
   margin: 0 auto;
@@ -328,10 +330,6 @@ nav .active {
     width: 25px;
     min-width: 25px;
     height: 25px;
-    margin: 0 auto;
-  }
-  nav .pages {
-    width: 145px;
     margin: 0 auto;
   }
 }
@@ -361,6 +359,10 @@ footer .icons li {
   min-width: 18px;
   height: 18px;
   margin: 0 auto;
+  transition: all 0.25s ease;
+}
+footer .icons li:hover {
+  transform: scale(1.2);
 }
 footer .logob {
   margin: 0 auto;
@@ -482,6 +484,16 @@ img {
   text-decoration: none;
 }
 
+.latest-projects {
+  display: flex;
+  align-items: baseline;
+}
+
+.see-all-btn {
+  display: inline;
+  margin-left: 2.5rem;
+}
+
 @media screen and (min-width: 600px) {
   .project-list {
     display: flex;
@@ -542,7 +554,7 @@ img {
     width: 55%;
   }
   .hero__overlay p {
-    font-size: 10vw;
+    font-size: 6vw;
     margin-bottom: 4vw;
   }
   .hero__overlay span {

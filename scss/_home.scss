@@ -117,6 +117,16 @@ img {
   text-decoration: none;
 }
 
+.latest-projects {
+  display: flex;
+  align-items: baseline;
+}
+
+.see-all-btn{
+  display: inline;
+  margin-left: 2.5rem;
+}
+
 @media screen and (min-width: 600px) {
   
   .project-list {
@@ -190,7 +200,7 @@ img {
 
 
   .hero__overlay  p {
-    font-size: 10vw;
+    font-size: 6vw;
     margin-bottom: 4vw;
   }
   

@@ -30,8 +30,12 @@ footer {
       min-width: 18px;
       height: 18px;
       margin: 0 auto;
-     
+      transition: all .25s ease
     }
+  }
+
+  .icons li:hover {
+    transform: scale(1.2);
   }
 
   .logob {
@@ -43,6 +47,7 @@ footer {
     }
     
   }
+
 
 }
 

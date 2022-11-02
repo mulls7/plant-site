@@ -2,10 +2,12 @@ header {
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 40px ;
-  padding-right: 20px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 40px;
   position: static;
   z-index: 1;
+  align-items: center;
   /*
   position: fixed; 
   top: 0;
@@ -26,8 +28,6 @@ header {
     width: 140px;
     min-width: 140px;
     display: block;
-    margin-left: 5rem;
-    margin-bottom: 0px;
     transition: all .5s;
     
   }
@@ -38,27 +38,21 @@ header {
 }
 
 nav {
-  margin-right: 5rem;
-  ul {
-
-    display: flex;
-    margin: 0;
-    margin-top: .5rem;
-  }
-
-  li {
-    list-style: none;
-    
-  }
+  width: fit-content;
+  margin-top: .5rem;
 
   .pages {
-    width: 128px; 
-    
+
+    ul {
+      display: flex;
+      margin: 0;
+      width: fit-content ;
+    }
 
     li {
-      padding-bottom: 10px;
       margin: 0 auto;
-      margin-right: 3rem;
+      margin-left: 3rem;
+      list-style: none;
 
       .page-link{
         position: relative;
@@ -99,8 +93,12 @@ nav {
       .page-link:hover{
         letter-spacing: .2rem;
       }
-      
     }
+
+    li:first-child {
+      margin-left: 0rem;
+    }
+
 
   }
   
@@ -140,9 +138,6 @@ nav {
       }
     }
   
-    .pages {
-      width: 145px;
-      margin: 0 auto;
-    }
+    
   }
 }
