@@ -5,6 +5,7 @@ main {
   padding-left: 5rem;
   padding-right: 5rem;
   margin-left: auto;
+  
 }
 
 /* Ensures base font size is a factor of 10 for using rems for font sizes */
@@ -230,7 +231,8 @@ img {
 @media screen and (min-width: 1200px) {
   /* Scale body to new minimum width */
   main {
-    min-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .hero__overlay {
@@ -258,6 +260,8 @@ img {
     gap: 0 2.5rem;
     
   }
+
+  
 
 
   /* Other desktop styles */
