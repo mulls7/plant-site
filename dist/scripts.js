@@ -8,13 +8,13 @@ const hamburger = document.querySelector(".hamburger")
 const navMenu = document.querySelector(".pages__list")
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active1");
+  navMenu.classList.toggle("active1");
 })
 
 document.querySelectorAll("li").forEach(n => n.addEventListener('click', () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
+  hamburger.classList.remove("active1");
+  navMenu.classList.remove("active1");
 }))
 
 /*

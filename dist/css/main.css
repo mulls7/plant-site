@@ -189,6 +189,11 @@ nav a {
   text-transform: uppercase;
 }
 
+nav a:hover {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 p {
   font-size: 1.3rem;
   font-weight: 300;
@@ -250,6 +255,7 @@ header {
 }
 header .hamburger {
   display: none;
+  transition: 0.1s ease;
 }
 header .hamburger .bar {
   display: block;
@@ -258,6 +264,12 @@ header .hamburger .bar {
   margin: 5px auto;
   background-color: white;
   transition: 0.3s all ease;
+}
+header .hamburger:hover {
+  transform: scale(1.09);
+}
+header .hamburger:active {
+  transform: scale(0.8);
 }
 header.home {
   margin-bottom: 0px;
@@ -331,6 +343,9 @@ nav li .page-link:hover {
 nav li:first-child {
   margin-left: 0rem;
 }
+nav .active {
+  font-weight: 700;
+}
 
 .icons {
   width: 128px;
@@ -342,21 +357,18 @@ nav li:first-child {
   height: 18px;
   margin: 0 auto;
 }
-.icons .active {
-  font-weight: 700;
-}
 
 @media screen and (max-width: 768px) {
   nav .hamburger {
     display: block;
   }
-  nav .hamburger.active .bar:nth-child(2) {
+  nav .hamburger.active1 .bar:nth-child(2) {
     opacity: 0;
   }
-  nav .hamburger.active .bar:nth-child(1) {
+  nav .hamburger.active1 .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  nav .hamburger.active .bar:nth-child(3) {
+  nav .hamburger.active1 .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
   nav .pages__list {
@@ -379,7 +391,7 @@ nav li:first-child {
   nav .pages__list li {
     margin: 2rem 0;
   }
-  nav .pages__list.active {
+  nav .pages__list.active1 {
     position: absolute;
     top: 69px;
     right: 0;
@@ -429,43 +441,41 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 1rem;
+  gap: 3rem;
 }
 footer .copyright {
-  text-align: left;
+  text-align: right;
   width: 100%;
   font-size: 0.75rem;
   opacity: 0.5;
-  border: 2px solid red;
 }
 footer li {
   list-style: none;
 }
-footer .icons__list {
+footer .icons {
+  width: 200px;
+  margin: 0;
+}
+footer .icons .icons__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
-footer .icons {
-  border: 2px solid red;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
 footer .icons li {
   width: 18px;
   min-width: 18px;
   height: 18px;
-  margin: 0 0rem 0 2rem;
+  margin: 0 0rem 0 0rem;
   transition: all 0.25s ease;
 }
 footer .icons li:hover {
   transform: scale(1.2);
 }
 footer .logob {
-  width: 50%;
-  border: 2px solid red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 footer .logob img {
   width: 128px;

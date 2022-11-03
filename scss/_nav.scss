@@ -22,8 +22,7 @@ header {
   
   .hamburger {
     display: none;
-
-    
+    transition: .1s ease;
     .bar {
       display: block;
       width: 25px;
@@ -32,7 +31,14 @@ header {
       background-color: white;
       transition: .3s all ease;
     }
+  }
 
+  .hamburger:hover {
+    transform: scale(1.09);
+  }
+
+  .hamburger:active {
+    transform: scale(.8);
   }
 
   &.home {
@@ -115,6 +121,9 @@ nav {
       margin-left: 0rem;
     }
 
+    .active {
+      font-weight: $weight-bold;
+      }
 
   }
   
@@ -128,12 +137,7 @@ nav {
       height: 18px;
       margin: 0 auto;
     }
-  
-
-  .active {
-    font-weight: $weight-bold;
-    }
-}
+} 
 
 @media screen and (max-width: 768px) {
    
@@ -144,14 +148,14 @@ nav {
       display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active1 .bar:nth-child(2){
       opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.active1 .bar:nth-child(1){
       transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active1 .bar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -171,16 +175,13 @@ nav {
       padding-right: 3rem;
       transition: 350ms ease;
       font-size: 2rem;
-   
-      
 
       li {
         margin: 2rem 0;
-        
       }
     }
 
-    .pages__list.active {
+    .pages__list.active1 {
       position: absolute;
       top: 69px;
       right: 0;
@@ -216,6 +217,8 @@ nav {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+
+   
 }
 
 @media screen and (min-width: 768px) {
