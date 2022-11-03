@@ -54,7 +54,7 @@
     }
     </style>
   </head>
-  <body>
+  <body data-nav="false">
     <header class="header-home">
       <h1>
         <a href="index.html">
@@ -62,14 +62,11 @@
         </a>
       </h1>
       <nav>
-        <div class="pages">
           <ul class="pages__list">
             <li><a href="index.html" class="page-link white active">Home</a></li>
             <li><a href="projects.html" class="page-link white">Projects</a></li>
             <li><a href="about.html" class="page-link white">About</a></li>
           </ul>
-        </div>
-
         <!--<div class="icons"> 
           <ul class="icons-list">
             <li><a href=""><img src="images/linked-in.png" alt="Linked-in Logo"></a></li>
@@ -78,7 +75,11 @@
             <li><a href=""><img src="images/dribbble.png" alt="Dribble Logo"></a></li>
           </ul>
         </div>-->
-        
+        <div id="nav-toggle" onClick="toggleNav()" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <div class="hero">
@@ -162,4 +163,5 @@
       </div>
     </footer>
   </body>
+  <script src="scripts.js"></script>
 </html>

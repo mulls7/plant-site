@@ -189,6 +189,11 @@ nav a {
   text-transform: uppercase;
 }
 
+nav a:hover {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 p {
   font-size: 1.3rem;
   font-weight: 300;
@@ -237,7 +242,7 @@ header {
   padding-right: 3rem;
   margin-bottom: 40px;
   position: static;
-  z-index: 1;
+  z-index: 100;
   align-items: center;
   /*
   position: fixed; 
@@ -247,6 +252,24 @@ header {
   */
   display: flex;
   justify-content: space-between;
+}
+header .hamburger {
+  display: none;
+  transition: 0.1s ease;
+}
+header .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: 0.3s all ease;
+}
+header .hamburger:hover {
+  transform: scale(1.09);
+}
+header .hamburger:active {
+  transform: scale(0.8);
 }
 header.home {
   margin-bottom: 0px;
@@ -266,28 +289,30 @@ nav {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
-nav .pages ul {
+nav ul {
   display: flex;
   margin: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-nav .pages li {
+nav li {
   margin: 0 auto;
   margin-left: 3rem;
   list-style: none;
 }
-nav .pages li .page-link {
+nav li .page-link {
   position: relative;
   display: block;
   overflow: hidden;
   padding-bottom: 0.4rem;
   transition: all 0.3s;
 }
-nav .pages li .page-link:before {
+nav li .page-link:before {
   content: "";
   position: absolute;
   left: -100%;
@@ -298,7 +323,7 @@ nav .pages li .page-link:before {
   transition: all 0.3s;
   color: #fff;
 }
-nav .pages li .page-link:after {
+nav li .page-link:after {
   content: "";
   position: absolute;
   left: 100%;
@@ -309,29 +334,84 @@ nav .pages li .page-link:after {
   transition: all 0.5s;
   color: #fff;
 }
-nav .pages li .page-link:hover:before, nav .pages li .page-link:hover:after {
+nav li .page-link:hover:before, nav li .page-link:hover:after {
   left: 0;
 }
-nav .pages li .page-link:hover {
+nav li .page-link:hover {
   letter-spacing: 0.2rem;
 }
-nav .pages li:first-child {
+nav li:first-child {
   margin-left: 0rem;
-}
-nav .icons {
-  width: 128px;
-  margin: 0 auto;
-}
-nav .icons li {
-  width: 18px;
-  min-width: 18px;
-  height: 18px;
-  margin: 0 auto;
 }
 nav .active {
   font-weight: 700;
 }
 
+.icons {
+  width: 128px;
+  margin: 0 auto;
+}
+.icons li {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav .hamburger {
+    display: block;
+  }
+  nav .hamburger.active1 .bar:nth-child(2) {
+    opacity: 0;
+  }
+  nav .hamburger.active1 .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  nav .hamburger.active1 .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  nav .pages__list {
+    opacity: 0;
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    flex-direction: column;
+    background-color: #f47b0a;
+    width: 100%;
+    text-align: right;
+    transition: 0.3s;
+    z-index: -1;
+    overflow: hidden;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: 350ms ease;
+    font-size: 2rem;
+  }
+  nav .pages__list li {
+    margin: 2rem 0;
+  }
+  nav .pages__list.active1 {
+    position: absolute;
+    top: 69px;
+    right: 0;
+    z-index: 0;
+    font-size: 2.5rem;
+    opacity: 0.85;
+  }
+  body[data-nav=true] > main {
+    transform: translateY(220px);
+  }
+  body[data-nav=true] > .hero {
+    transform: translateY(190px);
+  }
+  body[data-nav=true] > footer {
+    transform: translateY(190px);
+  }
+  main, .hero {
+    transition: transform 500ms ease;
+  }
+}
 @media screen and (min-width: 600px) {
   header {
     padding-left: 5rem;
@@ -361,10 +441,10 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 1rem;
+  gap: 3rem;
 }
 footer .copyright {
-  text-align: left;
+  text-align: right;
   width: 100%;
   font-size: 0.75rem;
   opacity: 0.5;
@@ -372,27 +452,30 @@ footer .copyright {
 footer li {
   list-style: none;
 }
-footer ul {
+footer .icons {
+  width: 200px;
+  margin: 0;
+}
+footer .icons .icons__list {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-}
-footer .icons__list {
-  width: 140px;
-  margin: 0 auto;
 }
 footer .icons li {
   width: 18px;
   min-width: 18px;
   height: 18px;
-  margin: 0 2rem 0 0;
+  margin: 0 0rem 0 0rem;
   transition: all 0.25s ease;
 }
 footer .icons li:hover {
   transform: scale(1.2);
 }
 footer .logob {
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 footer .logob img {
   width: 128px;
