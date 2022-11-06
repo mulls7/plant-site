@@ -450,6 +450,7 @@ img {
 
 .project-list__project {
   margin-bottom: 2rem;
+  min-width: 120px;
   box-shadow: 0 1px 1px hsla(0deg, 0%, 0%, 0.075), 0 2px 2px hsla(0deg, 0%, 0%, 0.075), 0 4px 4px hsla(0deg, 0%, 0%, 0.075), 0 8px 8px hsla(0deg, 0%, 0%, 0.075), 0 16px 16px hsla(0deg, 0%, 0%, 0.075);
   transition: all 0.4s ease;
 }
@@ -460,6 +461,11 @@ img {
 .project-list__project__img {
   margin-bottom: 2rem;
   aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-list__project__img img {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -535,11 +541,6 @@ img {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  .home-project-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 2.5rem;
-  }
   .project-list {
     display: flex;
     justify-content: flex-start;
@@ -553,6 +554,15 @@ img {
   .hero__overlay p {
     font-size: 8vw;
     margin-bottom: 4vw;
+  }
+  .home-project-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 2.5rem;
+    flex-wrap: wrap;
+  }
+  .home-project-list .project-list__project {
+    width: 47.5%;
   }
 }
 @media screen and (min-width: 950px) {
@@ -571,6 +581,15 @@ img {
   main .project-list__project {
     width: 31.5%;
     flex-wrap: wrap;
+  }
+  main .home-project-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 2.5rem;
+    flex-wrap: nowrap;
+  }
+  main .home-project-list .project-list__project {
+    width: 48%;
   }
   .hero__image {
     display: block;
