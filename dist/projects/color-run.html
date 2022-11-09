@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Run Home Page</title>
+    <meta charset="UTF-8" />
+    <link href="../css/main.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+      @keyframes grow {
+        0% {
+          transform: scale(.95);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+  
+      main {
+        animation: grow .9s ease;
+      }
+      </style>
+  </head>
+  <body>
+    <header class="header-home">
+      <h1>
+        <a href="../index.html"><img src="../images/luke-logo-white.png" alt="A logo with an eagle and the name Luke Moffitt"/>
+      </h1>
+      <nav>
+        <div class="pages">
+          <ul class="pages__list">
+            <li><a href="../index.html" class="page-link white">Home</a></li>
+            <li><a href="../projects.html" class="page-link white">Projects</a></li>
+            <li><a href="../about.html" class="page-link white">About</a></li>
+          </ul>
+        </div>
+        <!--<div class="icons"> 
+          <ul class="icons-list">
+            <li><a href=""><img src="images/linked-in.png" alt="Linked-in Logo"></a></li>
+            <li><a href=""><img src="images/instagram.png" alt="Instagram Logo"></a></li>
+            <li><a href=""><img src="images/behance.png" alt="Behance Logo"></a></li>
+            <li><a href=""><img src="images/dribbble.png" alt="Dribble Logo"></a></li>
+          </ul>
+        </div>-->
+        <div id="nav-toggle" onClick="toggleNav()" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Color Run Home Page</h2>
+      <div class="projects">
+        <div class="project-img--1">
+          <img src="../images/color-run-mock1.png" alt="iPhone mock-up with color run home page" />
+        </div>
+        <div class="project-aside">
+        <div class="project-img--2">
+          <img src="../images/color-run-mock2.png" alt="color run home page" />
+        </div>
+        <div class="project-img--3">
+          <img src="../images/color-run-mock3.png" alt="color run home page scrolled" />
+        </div>
+        </div>
+      </div>
+      <div class="project-description">
+        <div class="project-description__text">
+          <h3>Context</h3>
+          <p>Write Here...
+          </p>
+          <h3>Design Process</h3>
+          <ul class="list">
+            <li>Read the book to glean the tone and story <br> details that could potentially be on the cover</li>
+            <li>Sketch initial ideas and recieve feedback from peers</li>
+            <li>Refine the best idea and create a comp in computer</li>
+            <li>Recieve more feedback and fix issues from the feedback</li>
+          </ul>
+          <h3>Design Decisions</h3>
+          <p>The story is set in 1930’s at a middle school girl’s boarding school and had a lighthearted tone. The audience for the book is 9-12 year olds so I chose to keep the cover fun while also echoing some of the scenes from the book. The person carting the body in the wheelbarrow, the broken window, and the girls sneaking around at night were all moments in the book that wouldn’t give anything away to a potential reader while rewarding those who have gotten to those points in the story already.</p>
+        </div>
+      <div class="contact-block">
+      <div class="block-content">
+          <p class="white">Let's work 
+          </br>
+            <span class="together">Together</span></p>
+        <p class="button white">Contact me <img src="../images/arroww.png"/></p>
+      </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="logob">
+        <a href="index.html">
+          <img class="logo-brown" src="../images/luke-logo-brown.png" alt="A logo with an Eagle and the name Luke Moffitt"/>
+        </a>
+      </div>
+      <div class="icons">
+        <ul class="icons__list">
+          <li><a href="https://www.linkedin.com/in/luke-moffitt-9323b5254/" target="_blank"><img src="../images/linked-inb.png" alt="Linked-in Logo"></a></li>
+          <li><a href="https://www.instagram.com/luke_moff/" target="_blank"><img src="../images/instagramb.png" alt="Instagram Logo"></a></li>
+          <li><a href="https://www.behance.net/lukemoffitt" target="_blank"><img src="../images/behanceb.png" alt="Behance Logo"></a></li>
+          <li><a href="https://dribbble.com/lukemoffitt" target="_blank"><img src="../images/dribbbleb.png" alt="Dribble Logo"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="../scripts.js"></script>
+</html>
