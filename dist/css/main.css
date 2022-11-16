@@ -570,52 +570,19 @@ img {
 }
 
 .hero {
-  position: relative;
   margin-bottom: 6rem;
-}
-.hero__overlay {
-  text-align: center;
-  position: absolute;
-  height: 0px;
-  z-index: 0;
+  text-align: left;
   width: 100%;
-  transform: translateY(20rem);
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background-color: #f47b0a;
 }
-.hero__image {
-  display: block;
-  margin-top: -40px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 35rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
-}
-
-.hero__overlay p {
-  font-size: 10vw;
-  margin-bottom: 0vw;
-  opacity: 0.85;
-}
-
-.hero__overlay span {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.hero__overlay img {
-  width: 3vw;
-}
-
-.hero__overlay .button {
-  margin-top: 6vw;
-  margin-bottom: 1vw;
-  font-size: 4vw;
-}
-
-.hero__overlay .button:hover {
-  text-decoration: none;
+.hero p {
+  font-size: 9.2vw;
+  margin-bottom: 4vw;
+  font-weight: 400;
+  line-height: 9vw;
+  color: white;
 }
 
 .latest-projects {
@@ -637,6 +604,19 @@ img {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+  .hero {
+    margin-bottom: 6rem;
+    text-align: left;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .hero p {
+    font-size: 7vw;
+    margin-bottom: 3vw;
+    font-weight: 400;
+    line-height: 7vw;
+  }
   .project-list {
     display: flex;
     justify-content: flex-start;
@@ -646,10 +626,6 @@ img {
   .project-list__project {
     width: 48%;
     flex-wrap: wrap;
-  }
-  .hero__overlay p {
-    font-size: 8vw;
-    margin-bottom: 4vw;
   }
   .home-project-list {
     display: flex;
@@ -687,22 +663,6 @@ img {
   main .home-project-list .project-list__project {
     width: 48%;
   }
-  .hero__image {
-    display: block;
-    margin-top: -40px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 90% 0;
-       object-position: 90% 0;
-    z-index: -1;
-  }
-  .hero__overlay {
-    transform: translateY(40rem);
-  }
   .about-block__content {
     display: flex;
     justify-content: space-between;
@@ -715,43 +675,12 @@ img {
   .about-block__content__desc {
     width: 55%;
   }
-  .hero__overlay p {
-    font-size: 6vw;
-    margin-bottom: 4vw;
-  }
-  .hero__overlay span {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .hero__overlay img {
-    width: 2vw;
-  }
-  .hero__overlay .button {
-    margin-top: 4vw;
-    font-size: 2vw;
-  }
 }
 @media screen and (min-width: 1200px) {
   /* Scale body to new minimum width */
   main {
     max-width: 1400px;
     margin: 0 auto;
-  }
-  .hero__overlay {
-    transform: translateY(40rem);
-  }
-  .hero__image {
-    display: block;
-    margin-top: -40px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 90% 0;
-       object-position: 90% 0;
-    z-index: -1;
   }
   .project-list__project {
     width: 40%;
