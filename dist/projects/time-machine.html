@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dorm Branding Project Page</title>
+    <title>Time Machine Project Page</title>
     <meta charset="UTF-8" />
     <link href="../css/main.css" type="text/css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+      @keyframes grow {
+        0% {
+          transform: scale(.95);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+  
+      main {
+        animation: grow .9s ease;
+      }
+      </style>
   </head>
-  <style>
-    @keyframes grow {
-      0% {
-        transform: scale(.95);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    main {
-      animation: grow .9s ease;
-    }
-    </style>
   <body>
     <header class="header-home">
       <h1>
@@ -50,38 +50,45 @@
       </nav>
     </header>
     <main>
-      <h2>Dorm Branding</h2>
+      <h2>Time Machine Web Design</h2>
       <div class="projects">
-        <img class="chesney-project-img--1"src="../images/chesney-back.png" alt="Don't sleep on St. Chesney design on back of t-shirt" />
-        <img class="chesney-project-img--1" src="../images/chesney-front.png" alt="St. Clair and McChesney on the front of a shirt" />
+        <div class="project-img--1">
+          <img src="../images/time-machine-mock1.png" alt="iPhone mock-up with color run home page" />
+        </div>
+        <div class="project-aside">
+        <div class="project-img--2">
+          <img src="../images/time-machine-mock2.png" alt="color run home page" />
+        </div>
+        <div class="project-img--3">
+          <img src="../images/time-machine-mock3.png" alt="color run home page scrolled" />
+        </div>
+        </div>
       </div>
       <div class="project-description">
         <div class="project-description__text">
           <h3>Context</h3>
-          <p>At Cedarville University, the dorms “St. Clair” and “McChesney” are combined under one Resident Director who at the beginning of the year said “Don’t sleep on St. Chesney”.
-          </p>
-          <p>As a call toward unification and student involvement in school events, this was the inspiration for the dorm shirt design.
+          <p>The main goal of this project was to re-design an existing small e-commerce site in order to develop skills in HTML, CSS, and visual design for web. In addition to being aesthetically pleasing, the site needed to be responsive from mobile to desktop, use semantic markup, efficient CSS, and use a grid system.
           </p>
           <h3>Design Process</h3>
           <ul class="list">
-            <li>Took pictures of myself draped in a blanket in front of a mirror for cloak accuracy</li>
-            <li>Created sketches based on the pictures and created a comp in the computer</li>
-            <li>Recieved feedback and modified the design for final application</li>
+            <li>Choose site to re-design</li>
+            <li>Create appropriate style tiles in Figma for site aesthetics</li>
+            <li>Create a grid system in Figma</li>
+            <li>Sketch wireframes for pages</li>
+            <li>Create Figma mock-ups at 3 different screen sizes based on sketches</li>
+            <li>Create simplest, semantic markup using HTML and CSS at mobile screen size</li>
+            <li>Finish full build by setting media queries for different screen sizes</li>
           </ul>
-          <h3>Design Decisions</h3>
-          <ul class="list">
-            <li>I chose to incorporate the merging of the two dorms and the theme of  duality in the design with the half-face of the saint and the logo of St. Chesney</li>
-            <li>The somewhat menacing tone of the shirt is meant to jokingly match the tone of the Resident Director </li>
-          </ul>
+          <p>Check out the code <a class= "link" href="https://mulls7.github.io/time-machine-website/" target="_blank">here.</a></p>
         </div>
-      <div class="contact-block chesney-contact-block">
+      <div class="contact-block">
       <div class="block-content">
-        <p class="white">Let's work 
-        </br>
-          <span class="together">Together</span></p>
+          <p class="white">Let's work 
+          </br>
+            <span class="together">Together</span></p>
         <p class="button white">Contact me <img src="../images/arroww.png"/></p>
-        </div>
-       </div>
+      </div>
+      </div>
       </div>
     </main>
     <footer>
