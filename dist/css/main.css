@@ -220,6 +220,10 @@ h3 {
   margin-bottom: 1rem;
 }
 
+i {
+  font-style: italic;
+}
+
 nav a {
   font-weight: 400;
   text-transform: uppercase;
