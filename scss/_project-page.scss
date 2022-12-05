@@ -1,21 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Literata:opsz,wght@7..72,400;7..72,500&display=swap");
-/*
-font-family: 'Lato', sans-serif;
-font-family: 'Literata', serif;
-*/
-
-/* Typography */
-
 
 button {
-  background-color: var(--tertiary-color);
+  background-color: $primary-color;
   color: white;
-  padding: 14px 20px;
+  padding: .75rem 1rem;
   border: none;
   border-radius: 10px;
   text-transform: uppercase;
+  font-size: .75rem;
+  margin-right: .2rem;
+  margin-bottom: 1rem;
 }
 
+.plants .active {
+  background-color: $secondary-color;
+}
 
 #details-list ul {
   list-style-type: none;
@@ -30,7 +28,7 @@ td {
 }
 
 tr {
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid $primary-color;
 }
 
 tr:last-child {
@@ -47,12 +45,12 @@ tr:last-child {
 
 .accordion-control {
   background-color: white;
-  color: var(--primary-color);
+  color: $primary-color;
   padding: 5px;
-  border-top: solid 1px var(--primary-color);
-  border-bottom: solid 1px var(--primary-color);
+  border-top: solid 1px $primary-color;
+  border-bottom: solid 1px $primary-color;
   border-radius: 0px;
-  font-size: var(--h4-size);
+  font-size: $size-h4;
   letter-spacing: 2.5px;
   line-height: 30px;
   text-transform: uppercase;
@@ -72,28 +70,24 @@ tr:last-child {
 
 
 .container {
-  display: flex;
-  gap: 30px;
+  width: 100%;
 }
 
 .container__imgs {
-  width: 40%;
-  max-width: 350px;
-  gap: 30px;
+ width: 100%;
 }
 
 .container__imgs--main {
   margin-bottom: 30px;
 }
 
-.container__desc {
-  width: 60%;
-}
+
 
 .container__imgs--thumb {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  align-content: space-between;
+  width: 100%;
 }
 
 /* Image selector */
@@ -107,7 +101,24 @@ tr:last-child {
 }
 
 .thumb-active {
-  border: 1px solid var(--tertiary-color);
+  border: 1px solid $tertiary-color;
   padding: 1px;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+
+  .container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .container__imgs {
+    width: 40%;
+    max-width: 350px;
+    gap: 30px;
+  }
+  .container__desc {
+    width: 60%;
+  }
 }

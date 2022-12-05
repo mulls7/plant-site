@@ -4,7 +4,7 @@
 
 
 
-  $font-body: "Literata", sans-serif;
+  $font-body: "lato", sans-serif;
 
   $size-body: 1rem;
   $size-h1: 2.75rem;
@@ -15,9 +15,9 @@
   $size-copyright: .75rem;
 
   $weight-body: 300;
-  $weight-reg: 400;
-  $weight-semi: 600;
-  $weight-bold: 700;
+  $weight-reg: 300;
+  $weight-semi: 400;
+  $weight-bold: 500;
 
   $line-body: 1.95rem;
   $line-h2: 3.5rem;
@@ -38,6 +38,7 @@ a {
 
 body {
   font-family: $font-body;
+  font-weight: $weight-body;
 }
 
 button,
@@ -88,16 +89,23 @@ h2 {
   font-weight: 400;
   letter-spacing: -0.5px;
   line-height: 50px;
+}
+
+.plants h2 {
   margin-bottom: 1.5rem;
 }
 
-h3 {
+h3, .desc {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: $size-h3;
   line-height: 40px;
   color: $primary-color;
   margin-bottom: 20px;
+}
+
+.desc {
+  margin-bottom: 2rem;
 }
 
 p {

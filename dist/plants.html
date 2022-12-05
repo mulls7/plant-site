@@ -36,26 +36,8 @@
     main {
       animation: grow .9s ease;
     }
-    .hero {
-      animation: grow .9s ease;
-    }
-    .hero {
-      animation: slideInLeft .85s ease;
-    }
-    .project-list__project:nth-child(1) {
-      animation: slideInRight .8s ease; 
-    }
-    .project-list__project:nth-child(2) {
-      animation: slideInRight .9s ease;
-    }
-    .project-list__project:nth-child(3) {
-      animation: slideInRight 1s ease;
-    }
-    .project-list__project:nth-child(4) {
-      animation: slideInRight .8s ease; 
-    }
-    .project-list__project:nth-child(5) {
-      animation: slideInRight .9s ease;
+    .project-list__project {
+      animation: grow .8s ease; 
     }
     </style>
   </head>
@@ -77,9 +59,10 @@
       </nav>
     </header>
       
-    <main>   
+    <main class="plants">   
       <h2>Shop All Plants</h2>
-      <div class="project-list">
+      <div id="buttons"></div>
+      <div class="project-list" id="gallery">
         <div class="project-list__project" data-tags="XL">
           <a href="products/monstera.html"><img class="project-list__project__img" src="images/full-monstera.jpeg" alt=""/></a>
           <div class="project-list__project__text">
@@ -101,14 +84,14 @@
             <p>$49</p><span>SM</span>
           </div>  
         </div>
-        <div class="project-list__project" data-tags="SM">
+        <div class="project-list__project" data-tags="MD">
           <a href="products/prickly-pear-cactus.html"><img class="project-list__project__img" src="images/full-prickly-pear-cactus.jpeg" alt=""/></a>
           <div class="project-list__project__text">
             <h3><a href="products/prickly-pear-cactus.html">Prickly Pear Cactus</a></h3>
             <p>$69</p><span>MD</span>
           </div>  
         </div>
-        <div class="project-list__project" data-tags="SM">
+        <div class="project-list__project" data-tags="LG">
           <a href="products/dracaena-golden-heart.html"><img class="project-list__project__img" src="images/full-dracaena-golden-heart.jpeg" alt=""/></a>
           <div class="project-list__project__text">
             <h3><a href="products/dracaena-golden-heart.html">Dracaena Golden Heart</a></h3>
@@ -122,5 +105,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="filter-tags.js"></script>
   </body>
 </html>
