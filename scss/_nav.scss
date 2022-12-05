@@ -2,8 +2,8 @@
 
 header {
   overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
   margin-bottom: 40px;
@@ -44,6 +44,10 @@ header {
   &.home {
     margin-bottom: 0px;
   }
+}
+
+.header-home {
+  margin-bottom: 0px;
 }
 
 nav {

@@ -212,8 +212,6 @@ h1 {
   font-size: 2.75rem;
   font-weight: 500;
   letter-spacing: -2px;
-  line-height: 50px;
-  margin-bottom: 20px;
 }
 
 h2 {
@@ -258,8 +256,8 @@ ul {
 
 header {
   overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
   margin-bottom: 40px;
@@ -294,6 +292,10 @@ header .hamburger:active {
   transform: scale(0.8);
 }
 header.home {
+  margin-bottom: 0px;
+}
+
+.header-home {
   margin-bottom: 0px;
 }
 
