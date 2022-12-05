@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    @keyframes slideInRight {
+      0% {
+        transform: translateX(100%);
+
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes grow {
+        0% {
+          transform: scale(.95);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+  
+    main {
+      animation: grow .9s ease;
+    }
+    .hero {
+      animation: grow .9s ease;
+    }
+    .hero {
+      animation: slideInLeft .85s ease;
+    }
+    .project-list__project:nth-child(1) {
+      animation: slideInRight .8s ease; 
+    }
+    .project-list__project:nth-child(2) {
+      animation: slideInRight .9s ease;
+    }
+    .project-list__project:nth-child(3) {
+      animation: slideInRight 1s ease;
+    }
+    .project-list__project:nth-child(4) {
+      animation: slideInRight .8s ease; 
+    }
+    .project-list__project:nth-child(5) {
+      animation: slideInRight .9s ease;
+    }
+    </style>
+  </head>
+  <body data-nav="false">
+    <header class="header-home">
+      <h1>
+        <a href="index.html">The Plant Store</a>
+      </h1>
+      <nav>
+          <ul class="pages__list">
+            <li><a href="index.html" class="page-link">Home</a></li>
+            <li><a href="plants.html" class="page-link  active">Plants</a></li>
+          </ul>
+        <div id="nav-toggle" onClick="toggleNav()" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+      
+    <main>   
+      <h2>Shop All Plants</h2>
+      <div class="project-list">
+        <div class="project-list__project" data-tags="XL">
+          <a href="products/monstera.html"><img class="project-list__project__img" src="images/full-monstera.jpeg" alt=""/></a>
+          <div class="project-list__project__text">
+            <h3><a href="products/monstera.html">Monstera</a></h3>   
+            <p>$169</p><span>XL</span>                
+          </div>  
+        </div>
+        <div class="project-list__project" data-tags="XXL">
+          <a href="products/bamboo-palm.html"><img class="project-list__project__img" src="images/full-bamboo-palm.jpeg" alt=""/></a>
+          <div class="project-list__project__text">
+            <h3><a href="products/bamboo-palm.html">Bamboo Palm</a></h3>   
+            <p>$199</p><span>XXL</span>                
+          </div>  
+        </div>
+        <div class="project-list__project" data-tags="SM">
+          <a href="products/mini-money-tree.html"><img class="project-list__project__img" src="images/full-mini-money-tree.jpeg" alt=""/></a>
+          <div class="project-list__project__text">
+            <h3><a href="products/mini-money-tree.html">Mini Money Tree</a></h3>
+            <p>$49</p><span>SM</span>
+          </div>  
+        </div>
+        <div class="project-list__project" data-tags="SM">
+          <a href="products/prickly-pear-cactus.html"><img class="project-list__project__img" src="images/full-prickly-pear-cactus.jpeg" alt=""/></a>
+          <div class="project-list__project__text">
+            <h3><a href="products/prickly-pear-cactus.html">Prickly Pear Cactus</a></h3>
+            <p>$69</p><span>MD</span>
+          </div>  
+        </div>
+        <div class="project-list__project" data-tags="SM">
+          <a href="products/dracaena-golden-heart.html"><img class="project-list__project__img" src="images/full-dracaena-golden-heart.jpeg" alt=""/></a>
+          <div class="project-list__project__text">
+            <h3><a href="products/dracaena-golden-heart.html">Dracaena Golden Heart</a></h3>
+            <p>$99</p><span>LG</span>
+          </div>  
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="index.html">The Plant Store</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

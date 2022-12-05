@@ -4,7 +4,6 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/main.css"/>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <style>
     @keyframes slideInLeft {
@@ -57,24 +56,13 @@
   <body data-nav="false">
     <header class="header-home">
       <h1>
-        <a href="index.html">
-          <img src="images/luke-logo-white.png" alt="A logo with an eagle and the name Luke Moffitt"/>
-        </a>
+        <a href="index.html">The Plant Store</a>
       </h1>
       <nav>
           <ul class="pages__list">
-            <li><a href="index.html" class="page-link white active">Home</a></li>
-            <li><a href="projects.html" class="page-link white">Projects</a></li>
-            <li><a href="about.html" class="page-link white">About</a></li>
+            <li><a href="index.html" class="page-link active">Home</a></li>
+            <li><a href="plants.html" class="page-link">Plants</a></li>
           </ul>
-        <!--<div class="icons"> 
-          <ul class="icons-list">
-            <li><a href=""><img src="images/linked-in.png" alt="Linked-in Logo"></a></li>
-            <li><a href=""><img src="images/instagram.png" alt="Instagram Logo"></a></li>
-            <li><a href=""><img src="images/behance.png" alt="Behance Logo"></a></li>
-            <li><a href=""><img src="images/dribbble.png" alt="Dribble Logo"></a></li>
-          </ul>
-        </div>-->
         <div id="nav-toggle" onClick="toggleNav()" class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -82,64 +70,48 @@
         </div>
       </nav>
     </header>
-      
+    <div class="hero">
+      <img src="images/hero.jpg"/>
+      <p>Plants.</p>
+    </div>
     <main class="page-home">
-      <div class="hero">
-        <p>Graphic Designer.</p>
-        <p>Web Designer.</p>
-        <p class="together">Creative Problem Solver.</p>
-        <!--<p class="button">See Work</p>
-        <img src="images/circle.png"/>-->
-      </div>
+      
       <div class="latest-projects"> 
-        <h2>Latest Projects</h2><a class="button orange see-all-btn" href="projects.html">see all<img src="images/arrowo.png"></a>
+        <h2>Newest Plants</h2><a class="button see-all-btn" href="plants.html">see all</a>
       </div>
       <div class="home-project-list">
-        <!--<div class="project-list__project">
-          <a href="projects/penguin-book-design.html"><img class="project-list__project__img" src="images/book-img.png" alt="Murder Most Unladylike book cover mockup"/></a>
+        <div class="project-list__project" data-tags="XL">
+          <a href="products/monstera.html"><img class="project-list__project__img" src="images/full-monstera.jpeg" alt=""/></a>
           <div class="project-list__project__text">
-            <h3><a href="projects/penguin-book-design.html">Penguin Book Design</a></h3>
-            <p>A project for the class Graphic Design 1. The main goal of the project was to redesign the book cover for Murder Most Unladylike...</p>
-            <p class="button"><a href="projects/penguin-book-design.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
-          </div>
-        </div>-->
-        <div class="project-list__project">
-         <div class="project-list__project__img">
-          <a href="projects/clarendon-book.html"><img src="images/clarendon-mock-cover.png" alt="a type specimen book about the typeface clarendon"/></a>
-        </div>
-          <div class="project-list__project__text">
-            <h3><a href="projects/clarendon-book.html">Clarendon Type Booklet</a></h3>
-            <p>The main goal of this project was to create a type specimen book about the typeface Clarendon. The book is...</p>
-            <p class="button"><a href="projects/clarendon-book.html" class="orange"> My Project<img src="images/arrowo.png"></p></a>
+            <h3><a href="products/monstera.html">Monstera</a></h3>   
+            <p>$169</p><span>XL</span>                
           </div>  
         </div>
-        <div class="project-list__project">
-          <a href="projects/dorm-branding.html"><img class="project-list__project__img" src="images/dorm-img.png" alt="Don't sleep on St. Chesney design on back of t-shirt"/></a>
+        <div class="project-list__project" data-tags="XXL">
+          <a href="products/bamboo-palm.html"><img class="project-list__project__img" src="images/full-bamboo-palm.jpeg" alt=""/></a>
           <div class="project-list__project__text">
-            <h3><a href="projects/dorm-branding.html">Dorm Branding</a></h3>
-            <p>At Cedarville University, the dorms “St. Clair” and “McChesney” are combined under one Resident Director, who...</p>
-            <p class="button"><a href="projects/dorm-branding.html" class="orange">My Project<img src="images/arrowo.png"></p></a>
+            <h3><a href="products/bamboo-palm.html">Bamboo Palm</a></h3>   
+            <p>$199</p><span>XXL</span>                
           </div>  
         </div>
-        <div class="project-list__project">
-          <a href="projects/stomp-web-design.html"><img class="project-list__project__img" src="images/web-img.png" alt="laptop with stomp box stop website on screen"/></a>
+        <div class="project-list__project" data-tags="SM">
+          <a href="products/mini-money-tree.html"><img class="project-list__project__img" src="images/full-mini-money-tree.jpeg" alt=""/></a>
           <div class="project-list__project__text">
-            <h3><a href="projects/stomp-web-design.html">Web Design</a></h3>
-            <p>The final project of Web Design 1 class. I used existing articles and imagery to create a small site about electric...</p>
-            <p class="button"><a href="projects/stomp-web-design.html" class="orange"> My Project<img src="images/arrowo.png"></p></a>
+            <h3><a href="products/mini-money-tree.html">Mini Money Tree</a></h3>
+            <p>$49</p><span>SM</span>
           </div>  
         </div>
       </div>
       <div class="about-block">
         <div class="about-block__content">
           <div class="about-block__content__img">
-            <img id="luke" src="images/about-card-img.png" alt="Portrait of Luke Moffitt"/>
+            <img id="luke" src="images/full-monstera.jpeg" alt=""/>
           </div>
           <div class="about-block__content__desc">
-            <h3 class="white">Welcome, Let's  Collaborate.</h3>
-            <p class="white">I’m currently a Senior at Cedarville University and am studying Visual Communication Design with a concentration in Interactive Web Design. </p>
+            <h3 class="white">Monstera Facts</h3>
+            <p class="white">... </p>
             <p class="button" >
-              <a href="about.html" class="white">To About Page<img src="images/arroww.png">
+              <a href="about.html" class="white">Buy Now<img src="images/arroww.png">
             </p>
             </a>
           </div>
@@ -147,23 +119,9 @@
       </div>
     </main>
     <footer>
-      <div class="logob">
-        <a href="index.html">
-          <img class="logo-brown" src="images/luke-logo-brown.png" alt="A logo with an Eagle and the name Luke Moffitt"/>
-        </a>
-      </div>
-      <div class="icons">
-        <ul class="icons__list">
-          <li><a href="https://www.linkedin.com/in/luke-moffitt-9323b5254/" target="_blank"><img src="images/linked-inb.png" alt="Linked-in Logo"></a></li>
-          <li><a href="https://www.instagram.com/luke_moff/" target="_blank"><img src="images/instagramb.png" alt="Instagram Logo"></a></li>
-          <li><a href="https://www.behance.net/lukemoffitt" target="_blank"><img src="images/behanceb.png" alt="Behance Logo"></a></li>
-          <li><a href="https://dribbble.com/lukemoffitt" target="_blank"><img src="images/dribbbleb.png" alt="Dribble Logo"></a></li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <span>&copy Copyright 2022 Luke Moffitt. All rights reserved</span>
-      </div>
+      <a href="index.html">The Plant Store</a>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
   </body>
-  <script src="scripts.js"></script>
 </html>

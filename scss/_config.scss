@@ -3,8 +3,8 @@
 #442B1C brown
 */
 
-$primary-color: #f47b0a;
-$secondary-color: #442b1c;
+$primary-color: #1D6E00;
+$secondary-color: #412C10;
 $white: #fafafa;
 
 a,
@@ -19,11 +19,6 @@ body {
 .orange {
   color: $primary-color;
 }
-
-header {
-    background-color: $primary-color;
-    /*opacity: .95;*/
-  }
 
 .connect-block, .contact-block {
   background-color: $secondary-color;

@@ -28,7 +28,7 @@ header {
       width: 25px;
       height: 3px;
       margin: 5px auto;
-      background-color: white;
+      background-color: $primary-color;
       transition: .3s all ease;
     }
   }
@@ -43,19 +43,6 @@ header {
 
   &.home {
     margin-bottom: 0px;
-  }
-
-  h1 img {
-    height: 29px;
-    width: 140px;
-    min-width: 140px;
-    display: block;
-    transition: all .5s;
-    
-  }
-
-  h1:hover img {
-    transform: scale(1.1);
   }
 }
 
@@ -93,7 +80,7 @@ nav {
         width: 100%;
         background-color: white;
         transition: all .3s;
-        color: #fff;
+        color: $primary-color;
       }
 
       .page-link:after {
@@ -105,7 +92,7 @@ nav {
         width: 100%;
         background-color: white;
         transition: all .5s;
-        color: #fff;
+        color: $primary-color;
       }
 
       .page-link:hover:before, .page-link:hover:after {
@@ -140,8 +127,7 @@ nav {
 } 
 
 @media screen and (max-width: 768px) {
-   
-  
+
 
   nav {
     .hamburger {
@@ -222,6 +208,11 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  
+  header {
+    border-bottom: 1px solid $secondary-color;
+  }
+
   nav {
     display: flex;
 
