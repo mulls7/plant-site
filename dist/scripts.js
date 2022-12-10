@@ -1,4 +1,5 @@
 
+
 const toggleNav = () => {
   document.body.dataset.nav = document.body.dataset.nav === 'true' ? 'false' : 'true';
   document.getElementsByClassName("hero").dataset.nav = document.getElementsByClassName("hero").dataset.nav === 'true' ? 'false' : 'true';
@@ -34,4 +35,5 @@ $(".accordion").on("click", ".accordion-control", function (e) {
   e.preventDefault();
   $(this).next(".accordion-panel").not(":animated").slideToggle();
 });
+
 
