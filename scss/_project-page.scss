@@ -112,7 +112,10 @@
     flex-direction: row;
     margin-bottom: 1rem;
     gap: .5rem;
-    border-radius: 50px;
+  }
+
+  .thumb img {
+    border-radius: 50%;
   }
   
   /* Image selector */
@@ -140,6 +143,7 @@
     border: 1px solid $tertiary-color;
     padding: 1px;
     box-sizing: border-box;
+    border-radius: 50%;
   }
 
   @media screen and (min-width: 500px) {

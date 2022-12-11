@@ -753,7 +753,9 @@ img {
   flex-direction: row;
   margin-bottom: 1rem;
   gap: 0.5rem;
-  border-radius: 50px;
+}
+.page-product .thumb img {
+  border-radius: 50%;
 }
 .page-product #photo-viewer {
   position: relative;
@@ -776,6 +778,7 @@ img {
   border: 1px solid #EC8805;
   padding: 1px;
   box-sizing: border-box;
+  border-radius: 50%;
 }
 @media screen and (min-width: 500px) {
   .page-product #photo-viewer {
