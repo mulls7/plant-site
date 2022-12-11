@@ -753,6 +753,7 @@ img {
   flex-direction: row;
   margin-bottom: 1rem;
   gap: 0.5rem;
+  border-radius: 50px;
 }
 .page-product #photo-viewer {
   position: relative;
