@@ -43,6 +43,12 @@ img {
   gap: 1rem;
 }
 
+.home-project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 
 
 .project-list__project {
@@ -178,11 +184,6 @@ img {
     max-width: 1400px;
     margin: 0 auto;
   }
-  
-
-  
 }
   
-
-
   /* Other desktop styles */
