@@ -30,10 +30,12 @@ document.querySelectorAll("li").forEach(n => n.addEventListener('click', () => {
   });
   */
 
-$(".accordion").on("click", ".accordion-control", function (e) {
-  console.log("button clicked");
-  e.preventDefault();
-  $(this).next(".accordion-panel").not(":animated").slideToggle();
-});
+  $(".accordion").on("click", ".accordion-control", function (e) {
+    console.log("button clicked");
+    e.preventDefault();
+    $(this).toggleClass("active-rotate");
+    $(this).next(".accordion-panel").not(":animated").slideToggle();
+  });
+  
 
 

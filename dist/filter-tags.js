@@ -27,7 +27,12 @@
       $(this)
         .addClass('active')
         .siblings()
-        .removeClass('active');
+        .removeClass('active')
+        .parent()
+          .parent()
+          .children('#b2')
+          .children()
+          .removeClass('active');;
       $imgs.show();
     }
   }).appendTo($buttons)
@@ -45,7 +50,7 @@
           .parent()
           .children('#b2')
           .children()
-          .removeClass('active');;
+          .removeClass('active');
         $imgs
           .hide()
           .filter(tagged[tagName])
@@ -77,8 +82,6 @@
     }
   });
   // buttons, event handlers, and filters go here
- 
-
 
   $.each(tagged, function(tagName) {
     $('<button/>' , {

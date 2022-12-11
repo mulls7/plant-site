@@ -38,52 +38,39 @@
         </div>
       </nav>
     </header>
-      <main class="page-home">
+      <main class="page-product">
         <div class="container">
           <div class="container__imgs">
-            <div class="container__imgs--main">
-              <img
-                class="container__imgs--big"
-                id="container__imgs--main1"
-                src="../images/main1.png"
-              />
-              <img
-                class="container__imgs--big hide-img"
-                id="container__imgs--main2"
-                src="../images/main2.png"
-              />
-              <img
-                class="container__imgs--big hide-img"
-                id="container__imgs--main3"
-                src="../images/main3.png"
-              />
-              <img
-                class="container__imgs--big hide-img"
-                id="container__imgs--main4"
-                src="../images/main4.png"
-              />
-            </div>
-            <div class="container__imgs--thumb">
-              <img
-                class="container__imgs--small thumb-active"
-                id="container__imgs--thumb1"
-                src="../images/thumb1.png"
-              />
-              <img
-                class="container__imgs--small"
-                id="container__imgs--thumb2"
-                src="../images/thumb2.png"
-              />
-              <img
-                class="container__imgs--small"
-                id="container__imgs--thumb3"
-                src="../images/thumb3.png"
-              />
-              <img
-                class="container__imgs--small"
-                id="container__imgs--thumb4"
-                src="../images/thumb4.png"
-              />
+            <div class="container__imgs--main" id="photo-viewer"></div>
+            <div class="container__imgs--thumb" id="thumbnails">
+              <a href="../images/main1.png" class="thumb thumb-active">
+                <img
+                  class="container__imgs--small"
+                  id="container__imgs--thumb1"
+                  src="../images/thumb1.png"
+                />
+              </a>
+              <a href="../images/main2.png" class="thumb">
+                <img
+                  class="container__imgs--small"
+                  id="container__imgs--thumb2"
+                  src="../images/thumb2.png"
+                />
+              </a>
+              <a href="../images/main3.png" class="thumb">
+                <img
+                  class="container__imgs--small"
+                  id="container__imgs--thumb3"
+                  src="../images/thumb3.png"
+                />
+              </a>
+              <a href="../images/main4.png" class="thumb">
+                <img
+                  class="container__imgs--small"
+                  id="container__imgs--thumb4"
+                  src="../images/thumb4.png"
+                />
+              </a>
             </div>
           </div>
           <div class="container__desc">
@@ -103,7 +90,9 @@
             </p>
             <ul class="accordion">
               <li>
-                <button class="accordion-control">Details & Care</button>
+                <button class="accordion-control">
+                  <img src="../images/arrow.png" /> Details & Care
+                </button>
                 <div class="accordion-panel" id="details-list">
                   <table id="details-list__main">
                     <tr>
@@ -122,7 +111,9 @@
                 </div>
               </li>
               <li>
-                <button class="accordion-control">What's Included</button>
+                <button class="accordion-control no-top">
+                  <img src="../images/arrow.png" /> What's Included
+                </button>
                 <div class="accordion-panel" id="included-list">
                   <ul>
                     <li>Healthy plant pre-potted with premium soil</li>
@@ -153,5 +144,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../scripts.js"></script>
+    <script src="../photo-viewer.js"></script>
   </body>
 </html>
