@@ -22,6 +22,7 @@ img {
   padding: 8%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
@@ -36,10 +37,15 @@ img {
   }
 }
 
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 
 
 .project-list__project {
-  margin-bottom: 2rem;
   min-width: 120px;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
@@ -55,7 +61,7 @@ img {
   }
 
   &__img {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     aspect-ratio: 1/1;
     object-fit: cover;
     img {
@@ -65,7 +71,7 @@ img {
   }
 
   &__text {
-    padding: 0 2rem 2rem;
+    padding: 0 1rem 1.5rem;
   }
 }
 
@@ -92,8 +98,6 @@ img {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-
-
   h2 {
     margin-right: 2.5rem;
   }
@@ -130,27 +134,15 @@ img {
   }
 
   .project-list {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
-  .project-list__project {
-    width: 48%;
-    flex-wrap: wrap;
-  }
-
 
   .home-project-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 1rem;
-    flex-wrap: wrap;
-
-    .project-list__project {
-      width: 48%;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 }
 
@@ -160,30 +152,6 @@ img {
     min-width: 768px;
     padding-left: 13rem;
     padding-right: 13rem;
-
-    .project-list {
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      gap: 0 1rem;
-    }
-
-    .project-list__project {
-      width: 31.25%;
-      flex-wrap: wrap;
-    }
-
-    .home-project-list {
-      display: flex;
-      justify-content: space-between;
-      gap: 0 2.5rem;
-      flex-wrap: nowrap;
-  
-      .project-list__project {
-        width: 48%; 
-        
-      }
-    }
   }
   
 
@@ -212,16 +180,9 @@ img {
   }
   
 
-  .project-list__project {
-    width: 40%;
-  }
-
-  .project-list {
-    gap: 0 2.5rem;
-    
-  }
+  
+}
   
 
 
   /* Other desktop styles */
-}
